@@ -2,12 +2,16 @@ package modelo;
 
 public class Estudiante {
 
-    public String nombre;
-    public String carrera;
+    private String nombre;
+    private String materias;
+    
+    public String getMaterias(){
+        return materias;
+    }
 
-    public Estudiante(String nombre, String carrera) {
+    public Estudiante(String nombre, String materias) {
         this.nombre = nombre;
-        this.carrera = carrera;
+        this.materias = materias;
     }
 
     void guardarEstudiante() {
